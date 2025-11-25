@@ -1,1 +1,19 @@
+# Ignorar node_modules globalmente
 **/node_modules/
+
+# Ignorar .next (build de Next.js)
+app2025/.next/
+
+# Ignorar env
+*.env
+*.env.local
+*.env.development
+*.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Output de Express
+backend/dist/
