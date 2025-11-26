@@ -1,19 +1,18 @@
-const express = require('express');
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
+
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-// Configurar Jade
+// Configurar Pug
 app.set('view engine', 'pug');
 
-// Ruta HTML renderizada por Jade
+// Ruta HTML renderizada por Pug
 app.get('/', (req, res) => {
-  res.render('indexzz', { title: 'Backend Jade', message: 'Hola desde el backend con Jade!' });
+  res.render('index', { title: 'Backend Pug', message: 'Hola desde el backend con Pug!' });
 });
-
-
 
 // API ejemplo
 app.get('/api/saludo', (req, res) => {
